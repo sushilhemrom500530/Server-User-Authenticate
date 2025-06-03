@@ -1,7 +1,9 @@
 {
   "compilerOptions": {
     "typeRoots": ["./node_modules/@types", "./src/types"],
+    "outDir": "dist",
     "moduleResolution": "node",
+    "resolveJsonModule": true,
     "lib": ["es6", "dom"],
     /* Visit https://aka.ms/tsconfig to read more about this file */
 
@@ -112,5 +114,6 @@
     /* Completeness */
     // "skipDefaultLibCheck": true,                      /* Skip type checking .d.ts files that are included with TypeScript. */
     "skipLibCheck": true                                 /* Skip type checking all .d.ts files. */
-  }
+  },
+   "include": ["**/*.ts"]
 }
